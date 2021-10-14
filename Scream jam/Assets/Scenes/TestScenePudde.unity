@@ -444,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyName: Key1
+  playerkeys: {fileID: 0}
 --- !u!65 &970424641
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -515,7 +516,7 @@ Transform:
   m_GameObject: {fileID: 970424639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.09, y: 1.49, z: 6.4}
-  m_LocalScale: {x: 2.246, y: 5.7196, z: 1}
+  m_LocalScale: {x: 2.246, y: 5.7196, z: 0.29089}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerKeyItems : MonoBehaviour
 {
     [SerializeField] float raycastRange = 100.0f;
+    public List<string> keyNames;
 
     public bool doorKeyPickedUp = false;
     public bool foodPickedUp = false;
@@ -26,6 +27,7 @@ public class PlayerKeyItems : MonoBehaviour
             {
                 if(hit.rigidbody.CompareTag("Key1"))
                 {
+                    keyNames.Add("Key1");
                     Debug.Log("HIT something");
                     //doorKeyPickedUp = true;
                 }

@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastRange: 5
+  keyNames: []
   doorKeyPickedUp: 0
   foodPickedUp: 0
   fpsCamera: {fileID: 5152587317858202362}

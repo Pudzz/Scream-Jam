@@ -7,10 +7,11 @@ public class KeyGetPast : MonoBehaviour
 {
     public string keyName; 
     PlayerKeyItems playerItems = null;
+    public PlayerKeyItems playerkeys;
 
     void Start()
     {
-        playerItems = GameObject.Find("Player").GetComponent<PlayerKeyItems>();
+     
     }
 
     void Update()
@@ -18,12 +19,12 @@ public class KeyGetPast : MonoBehaviour
         
         if(Input.GetKey(KeyCode.R))
         {
-            if (keyName == "Key1")
+            for(int i = 0; i < playerItems.keyNames.Count; i++)
             {
-                if (playerItems.doorKeyPickedUp)
+                if(keyName == playerItems.keyNames[i])
+                {
                     Debug.Log("YAY");
-                else
-                    Debug.Log("NAY");
+                }
             }
         }
     }
