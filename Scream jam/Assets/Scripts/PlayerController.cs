@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        transform.position = playerSpawnPosition;
+        //transform.position = playerSpawnPosition;
 
         controller = GetComponent<CharacterController>();
 
