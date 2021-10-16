@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    PlayerStats playerStats;
+
     [SerializeField] Vector3 playerSpawnPosition = Vector3.zero;
 
     [SerializeField] Transform playerCamera = null;
@@ -26,8 +28,12 @@ public class PlayerController : MonoBehaviour
     Vector2 currentMouseDelta = Vector2.zero;
     Vector2 currentMouseDeltaVelocity = Vector2.zero;
 
+    public bool isRunning = false;
+
     void Start()
     {
+        playerStats = GetComponent<PlayerStats>();
+
         //transform.position = playerSpawnPosition;
 
         controller = GetComponent<CharacterController>();
@@ -65,22 +71,39 @@ public class PlayerController : MonoBehaviour
         targetDir.Normalize();
 
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
-
-        if(controller.isGrounded)
+    /*
+       if(controller.isGrounded)
         {
             velocityY = 0.0f;
         }
-
-        /*
+    */
+       /*   
         if(Input.GetButtonDown("Jump") && controller.isGrounded)
         {
            velocityY = Mathf.Sqrt(3.0f * -2.0f * gravity);
         }
-        */
+      */  
 
         velocityY += gravity * Time.deltaTime;
 
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed + Vector3.up * velocityY;
-        controller.Move(velocity * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && !playerStats.cantRun)
+        {
+            velocity = velocity * 1.5f;
+            if (!isRunning)
+                isRunning = true;
+        }
+        else if (Input.GetKey(KeyCode.LeftShift) && playerStats.cantRun)
+        {
+            velocity = velocity * 1.0f;
+        }
+        else
+        {
+            if (isRunning)
+                isRunning = false;
+        }
+
+        controller.Move(velocity * Time.deltaTime);        
     }
 }

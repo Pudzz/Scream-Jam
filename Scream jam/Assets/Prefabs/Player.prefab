@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5152587317819253435}
   - component: {fileID: 5152587317819253434}
   - component: {fileID: 5152587317819253432}
-  - component: {fileID: -7691706279184532175}
+  - component: {fileID: 2061132112611505169}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -72,7 +72,7 @@ MonoBehaviour:
   moveSmoothTime: 0.3
   mouseSmoothTime: 0.03
   lockCursor: 1
---- !u!114 &-7691706279184532175
+--- !u!114 &2061132112611505169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,13 +81,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5152587317819253437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e63ca3df8f6d3f4da93a9a35f05631f, type: 3}
+  m_Script: {fileID: 11500000, guid: 36ff4b16299fc954e98da27ccdfa26ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPositions:
-  - {x: -250, y: 0, z: -250}
-  - {x: 250, y: 0, z: 250}
-  - {x: 0, y: 0, z: 0}
+  health: 100
+  stamina: 100
+  food: 100
+  drink: 100
 --- !u!1 &5152587317858202367
 GameObject:
   m_ObjectHideFlags: 0

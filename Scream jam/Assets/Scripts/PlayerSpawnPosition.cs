@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerSpawnPosition : MonoBehaviour
 {
-    [SerializeField] List<Vector3> spawnPositions;   
+    [SerializeField] List<Vector3> spawnPositions;
 
     void Awake()
     {
