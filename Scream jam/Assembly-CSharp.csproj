@@ -47,6 +47,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\GuiManager.cs" />
+     <Compile Include="Assets\MainMenuScript.cs" />
      <Compile Include="Assets\Scripts\KeyGetPast.cs" />
      <Compile Include="Assets\GameManagerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerKeyItems.cs" />
