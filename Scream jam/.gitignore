@@ -9,7 +9,6 @@
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
->>>>>>> bjas
 sysinfo.txt
 *.stackdump
 Assets/AssetStoreTools*
@@ -45,7 +44,5 @@ Icon?
 ehthumbs.db
 [Tt]humbs.db
 [Dd]esktop.ini
-Corridor/Library/ShaderCache/
-Corridor/Library/metadata/
-Scream jam/Library/Artifacts/
+
 
