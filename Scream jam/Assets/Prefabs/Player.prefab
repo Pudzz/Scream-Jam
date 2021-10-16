@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5152587317819253435}
   - component: {fileID: 5152587317819253434}
   - component: {fileID: 5152587317819253432}
-  - component: {fileID: 6071407380522091620}
+  - component: {fileID: 2061132112611505169}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
   moveSmoothTime: 0.3
   mouseSmoothTime: 0.03
   lockCursor: 1
---- !u!114 &6071407380522091620
+--- !u!114 &2061132112611505169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,14 +81,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5152587317819253437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e75a1c4d5719682449849c3522fe5417, type: 3}
+  m_Script: {fileID: 11500000, guid: 36ff4b16299fc954e98da27ccdfa26ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastRange: 5
-  keyNames: []
-  doorKeyPickedUp: 0
-  foodPickedUp: 0
-  fpsCamera: {fileID: 5152587317858202362}
+  health: 100
+  stamina: 100
+  food: 100
+  drink: 100
 --- !u!1 &5152587317858202367
 GameObject:
   m_ObjectHideFlags: 0
