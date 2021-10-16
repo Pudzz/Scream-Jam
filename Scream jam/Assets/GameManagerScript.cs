@@ -16,7 +16,7 @@ public class GameManagerScript : MonoBehaviour
         Default, Play, Paus, End, Menu
     };
 
-    private float loadingTime = 1;
+    private float loadingTime = 5;
 
     private MenuState m_menuState = MenuState.Default;
     private GameState m_gameState = GameState.Default;
